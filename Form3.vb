@@ -41,12 +41,12 @@
             Return
         End If
 
-        Dim reservation As String() = {
+        Dim reservation = {
             TextBox1.Text,
             TextBox2.Text,
             TextBox3.Text,
-            ComboBox1.SelectedItem.ToString(),
-            ComboBox2.SelectedItem.ToString()
+            ComboBox1.SelectedItem.ToString,
+            ComboBox2.SelectedItem.ToString
         }
         Reservations.Add(reservation)
         info_utilisateur.DataGridView1.Rows.Add(reservation)
@@ -91,5 +91,9 @@
         If Not ConfirmClose() Then
             e.Cancel = True
         End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        flight_list.Show()
     End Sub
 End Class

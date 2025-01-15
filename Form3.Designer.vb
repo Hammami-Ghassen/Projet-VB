@@ -33,6 +33,7 @@ Partial Class Form3
         ComboBox1 = New ComboBox()
         ComboBox2 = New ComboBox()
         btn_reserver = New Button()
+        Button1 = New Button()
         SuspendLayout()
         ' 
         ' TextBox1
@@ -147,7 +148,7 @@ Partial Class Form3
         ' 
         btn_reserver.BackColor = Color.Cornsilk
         btn_reserver.ForeColor = Color.Black
-        btn_reserver.Location = New Point(12, 408)
+        btn_reserver.Location = New Point(12, 401)
         btn_reserver.Margin = New Padding(3, 2, 3, 2)
         btn_reserver.Name = "btn_reserver"
         btn_reserver.Size = New Size(336, 37)
@@ -155,12 +156,25 @@ Partial Class Form3
         btn_reserver.Text = "RESERVER"
         btn_reserver.UseVisualStyleBackColor = False
         ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.Cornsilk
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(10, 454)
+        Button1.Margin = New Padding(3, 2, 3, 2)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(336, 37)
+        Button1.TabIndex = 12
+        Button1.Text = "AFFICHER LA LISTE DES VOLS"
+        Button1.UseVisualStyleBackColor = False
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Moccasin
-        ClientSize = New Size(381, 469)
+        ClientSize = New Size(365, 515)
+        Controls.Add(Button1)
         Controls.Add(btn_reserver)
         Controls.Add(ComboBox2)
         Controls.Add(ComboBox1)
@@ -190,4 +204,5 @@ Partial Class Form3
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents btn_reserver As Button
+    Friend WithEvents Button1 As Button
 End Class
