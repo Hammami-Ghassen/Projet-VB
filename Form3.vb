@@ -1,4 +1,8 @@
-﻿Public Class Form3
+﻿Imports System.IO
+
+Public Class Form3
+    Dim cheminFichier As String = "recu.txt"
+
     Private Reservations As New List(Of String())
     Private Sub btn_reserver_Click(sender As Object, e As EventArgs) Handles btn_reserver.Click
         If String.IsNullOrWhiteSpace(TextBox1.Text) Then
@@ -50,6 +54,14 @@
         }
         Reservations.Add(reservation)
         info_utilisateur.DataGridView1.Rows.Add(reservation)
+        Using writer As New StreamWriter(cheminFichier, True)
+            writer.WriteLine("Nom: " & TextBox1.Text)
+            writer.WriteLine("Prénom: " & TextBox2.Text)
+            writer.WriteLine("Numéro de téléphone: " & TextBox3.Text)
+            writer.WriteLine("Destination: " & ComboBox1.SelectedItem.ToString)
+            writer.WriteLine("Date: " & ComboBox2.SelectedItem.ToString)
+            writer.WriteLine("-----------------------------")
+        End Using
 
         TextBox1.Clear()
         TextBox2.Clear()

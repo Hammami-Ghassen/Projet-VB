@@ -77,4 +77,8 @@ Public Class login
         End If
         Return True
     End Function
+
+    Private Sub username_txt_TextChanged(sender As Object, e As EventArgs) Handles username_txt.TextChanged
+
+    End Sub
 End Class

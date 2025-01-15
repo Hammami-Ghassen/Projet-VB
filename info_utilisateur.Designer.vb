@@ -32,12 +32,12 @@ Partial Class info_utilisateur
         DataGridView1.AllowUserToDeleteRows = False
         DataGridView1.BackgroundColor = SystemColors.ButtonFace
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(0, -1)
+        DataGridView1.Location = New Point(0, 4)
         DataGridView1.Margin = New Padding(3, 2, 3, 2)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(528, 394)
+        DataGridView1.Size = New Size(528, 389)
         DataGridView1.TabIndex = 11
         ' 
         ' info_utilisateur
