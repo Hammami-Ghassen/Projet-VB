@@ -81,4 +81,8 @@ Public Class login
     Private Sub username_txt_TextChanged(sender As Object, e As EventArgs) Handles username_txt.TextChanged
 
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class

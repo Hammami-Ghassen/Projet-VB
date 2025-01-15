@@ -22,6 +22,7 @@ Partial Class Form3
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
         TextBox1 = New TextBox()
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
@@ -40,7 +41,7 @@ Partial Class Form3
         ' 
         TextBox1.BackColor = Color.Linen
         TextBox1.ForeColor = Color.Black
-        TextBox1.Location = New Point(161, 29)
+        TextBox1.Location = New Point(223, 105)
         TextBox1.Margin = New Padding(3, 2, 3, 2)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(187, 23)
@@ -50,7 +51,7 @@ Partial Class Form3
         ' 
         TextBox2.BackColor = Color.Linen
         TextBox2.ForeColor = Color.Black
-        TextBox2.Location = New Point(161, 117)
+        TextBox2.Location = New Point(223, 193)
         TextBox2.Margin = New Padding(3, 2, 3, 2)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(187, 23)
@@ -60,7 +61,7 @@ Partial Class Form3
         ' 
         TextBox3.BackColor = Color.Linen
         TextBox3.ForeColor = Color.Black
-        TextBox3.Location = New Point(161, 203)
+        TextBox3.Location = New Point(223, 279)
         TextBox3.Margin = New Padding(3, 2, 3, 2)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(187, 23)
@@ -71,7 +72,7 @@ Partial Class Form3
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.ForeColor = Color.Black
-        Label1.Location = New Point(10, 32)
+        Label1.Location = New Point(72, 108)
         Label1.Name = "Label1"
         Label1.Size = New Size(94, 15)
         Label1.TabIndex = 3
@@ -82,7 +83,7 @@ Partial Class Form3
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(10, 125)
+        Label2.Location = New Point(72, 201)
         Label2.Name = "Label2"
         Label2.Size = New Size(91, 15)
         Label2.TabIndex = 4
@@ -94,7 +95,7 @@ Partial Class Form3
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
         Label3.ForeColor = Color.Black
-        Label3.Location = New Point(10, 211)
+        Label3.Location = New Point(72, 287)
         Label3.Name = "Label3"
         Label3.Size = New Size(135, 15)
         Label3.TabIndex = 5
@@ -105,7 +106,7 @@ Partial Class Form3
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
         Label4.ForeColor = Color.Black
-        Label4.Location = New Point(10, 293)
+        Label4.Location = New Point(72, 369)
         Label4.Name = "Label4"
         Label4.Size = New Size(88, 15)
         Label4.TabIndex = 6
@@ -116,7 +117,7 @@ Partial Class Form3
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
         Label5.ForeColor = Color.Black
-        Label5.Location = New Point(10, 355)
+        Label5.Location = New Point(72, 431)
         Label5.Name = "Label5"
         Label5.Size = New Size(94, 15)
         Label5.TabIndex = 7
@@ -127,7 +128,7 @@ Partial Class Form3
         ComboBox1.BackColor = Color.Linen
         ComboBox1.ForeColor = Color.Black
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(161, 284)
+        ComboBox1.Location = New Point(223, 360)
         ComboBox1.Margin = New Padding(3, 2, 3, 2)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(187, 23)
@@ -138,7 +139,7 @@ Partial Class Form3
         ComboBox2.BackColor = Color.Linen
         ComboBox2.ForeColor = Color.Black
         ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(161, 352)
+        ComboBox2.Location = New Point(223, 428)
         ComboBox2.Margin = New Padding(3, 2, 3, 2)
         ComboBox2.Name = "ComboBox2"
         ComboBox2.Size = New Size(187, 23)
@@ -148,7 +149,7 @@ Partial Class Form3
         ' 
         btn_reserver.BackColor = Color.Cornsilk
         btn_reserver.ForeColor = Color.Black
-        btn_reserver.Location = New Point(12, 401)
+        btn_reserver.Location = New Point(74, 477)
         btn_reserver.Margin = New Padding(3, 2, 3, 2)
         btn_reserver.Name = "btn_reserver"
         btn_reserver.Size = New Size(336, 37)
@@ -160,7 +161,7 @@ Partial Class Form3
         ' 
         Button1.BackColor = Color.Cornsilk
         Button1.ForeColor = Color.Black
-        Button1.Location = New Point(10, 454)
+        Button1.Location = New Point(72, 530)
         Button1.Margin = New Padding(3, 2, 3, 2)
         Button1.Name = "Button1"
         Button1.Size = New Size(336, 37)
@@ -173,7 +174,8 @@ Partial Class Form3
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Moccasin
-        ClientSize = New Size(365, 515)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        ClientSize = New Size(495, 635)
         Controls.Add(Button1)
         Controls.Add(btn_reserver)
         Controls.Add(ComboBox2)

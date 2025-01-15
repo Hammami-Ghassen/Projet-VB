@@ -22,6 +22,7 @@ Partial Class Form2
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
@@ -47,7 +48,7 @@ Partial Class Form2
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
         Label1.ForeColor = Color.Black
-        Label1.Location = New Point(13, 30)
+        Label1.Location = New Point(82, 32)
         Label1.Name = "Label1"
         Label1.Size = New Size(101, 15)
         Label1.TabIndex = 0
@@ -58,7 +59,7 @@ Partial Class Form2
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(13, 246)
+        Label2.Location = New Point(82, 248)
         Label2.Name = "Label2"
         Label2.Size = New Size(97, 15)
         Label2.TabIndex = 1
@@ -69,7 +70,7 @@ Partial Class Form2
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
         Label3.ForeColor = Color.Black
-        Label3.Location = New Point(6, 315)
+        Label3.Location = New Point(75, 317)
         Label3.Name = "Label3"
         Label3.Size = New Size(81, 15)
         Label3.TabIndex = 2
@@ -80,7 +81,7 @@ Partial Class Form2
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
         Label4.ForeColor = Color.Black
-        Label4.Location = New Point(6, 101)
+        Label4.Location = New Point(75, 103)
         Label4.Name = "Label4"
         Label4.Size = New Size(108, 15)
         Label4.TabIndex = 3
@@ -91,7 +92,7 @@ Partial Class Form2
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
         Label5.ForeColor = Color.Black
-        Label5.Location = New Point(13, 175)
+        Label5.Location = New Point(82, 177)
         Label5.Name = "Label5"
         Label5.Size = New Size(98, 15)
         Label5.TabIndex = 4
@@ -101,7 +102,7 @@ Partial Class Form2
         ' 
         TxtBox3.BackColor = Color.Linen
         TxtBox3.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TxtBox3.Location = New Point(153, 160)
+        TxtBox3.Location = New Point(222, 162)
         TxtBox3.Margin = New Padding(3, 2, 3, 2)
         TxtBox3.Name = "TxtBox3"
         TxtBox3.Size = New Size(168, 39)
@@ -111,7 +112,7 @@ Partial Class Form2
         ' 
         TxtBox2.BackColor = Color.Linen
         TxtBox2.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TxtBox2.Location = New Point(153, 86)
+        TxtBox2.Location = New Point(222, 88)
         TxtBox2.Margin = New Padding(3, 2, 3, 2)
         TxtBox2.Name = "TxtBox2"
         TxtBox2.Size = New Size(168, 39)
@@ -121,7 +122,7 @@ Partial Class Form2
         ' 
         TxtBox4.BackColor = Color.Linen
         TxtBox4.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TxtBox4.Location = New Point(153, 231)
+        TxtBox4.Location = New Point(222, 233)
         TxtBox4.Margin = New Padding(3, 2, 3, 2)
         TxtBox4.Name = "TxtBox4"
         TxtBox4.Size = New Size(168, 39)
@@ -131,7 +132,7 @@ Partial Class Form2
         ' 
         TxtBox5.BackColor = Color.Linen
         TxtBox5.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TxtBox5.Location = New Point(153, 300)
+        TxtBox5.Location = New Point(222, 302)
         TxtBox5.Margin = New Padding(3, 2, 3, 2)
         TxtBox5.Name = "TxtBox5"
         TxtBox5.Size = New Size(168, 39)
@@ -141,7 +142,7 @@ Partial Class Form2
         ' 
         TxtBox6.BackColor = Color.Linen
         TxtBox6.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TxtBox6.Location = New Point(153, 361)
+        TxtBox6.Location = New Point(222, 363)
         TxtBox6.Margin = New Padding(3, 2, 3, 2)
         TxtBox6.Name = "TxtBox6"
         TxtBox6.Size = New Size(168, 39)
@@ -152,7 +153,7 @@ Partial Class Form2
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
         Label6.ForeColor = Color.Black
-        Label6.Location = New Point(12, 376)
+        Label6.Location = New Point(81, 378)
         Label6.Name = "Label6"
         Label6.Size = New Size(97, 15)
         Label6.TabIndex = 12
@@ -162,7 +163,7 @@ Partial Class Form2
         ' 
         Btn1.BackColor = Color.Cornsilk
         Btn1.ForeColor = SystemColors.ActiveCaptionText
-        Btn1.Location = New Point(367, 88)
+        Btn1.Location = New Point(436, 90)
         Btn1.Margin = New Padding(3, 2, 3, 2)
         Btn1.Name = "Btn1"
         Btn1.Size = New Size(134, 36)
@@ -174,7 +175,7 @@ Partial Class Form2
         ' 
         Btn2.BackColor = Color.Cornsilk
         Btn2.ForeColor = SystemColors.ActiveCaptionText
-        Btn2.Location = New Point(367, 27)
+        Btn2.Location = New Point(436, 29)
         Btn2.Margin = New Padding(3, 2, 3, 2)
         Btn2.Name = "Btn2"
         Btn2.Size = New Size(134, 36)
@@ -186,7 +187,7 @@ Partial Class Form2
         ' 
         Btn3.BackColor = Color.Cornsilk
         Btn3.ForeColor = SystemColors.ActiveCaptionText
-        Btn3.Location = New Point(367, 151)
+        Btn3.Location = New Point(436, 153)
         Btn3.Margin = New Padding(3, 2, 3, 2)
         Btn3.Name = "Btn3"
         Btn3.Size = New Size(134, 36)
@@ -198,7 +199,7 @@ Partial Class Form2
         ' 
         TxtBox1.BackColor = Color.Linen
         TxtBox1.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TxtBox1.Location = New Point(153, 15)
+        TxtBox1.Location = New Point(222, 17)
         TxtBox1.Margin = New Padding(3, 2, 3, 2)
         TxtBox1.Name = "TxtBox1"
         TxtBox1.Size = New Size(168, 39)
@@ -208,7 +209,7 @@ Partial Class Form2
         ' 
         Button1.BackColor = Color.Cornsilk
         Button1.ForeColor = SystemColors.ActiveCaptionText
-        Button1.Location = New Point(367, 213)
+        Button1.Location = New Point(436, 215)
         Button1.Margin = New Padding(3, 2, 3, 2)
         Button1.Name = "Button1"
         Button1.Size = New Size(134, 36)
@@ -222,7 +223,7 @@ Partial Class Form2
         DataGridView1.AllowUserToDeleteRows = False
         DataGridView1.BackgroundColor = SystemColors.ButtonFace
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(13, 420)
+        DataGridView1.Location = New Point(82, 422)
         DataGridView1.Margin = New Padding(3, 2, 3, 2)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
@@ -235,7 +236,8 @@ Partial Class Form2
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Moccasin
-        ClientSize = New Size(551, 814)
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        ClientSize = New Size(737, 814)
         Controls.Add(DataGridView1)
         Controls.Add(Button1)
         Controls.Add(Btn3)
